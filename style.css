@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', sans-serif;
+    list-style: none;
+
+
+}
+
+body {
+    background-color: #333;
+    color: white;
+    text-transform:none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.animation {
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.6s;
+
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+}
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    background-color: violet;
+    position:absolute; left: 410px;
+}
+.skill li{
+
+    margin: 20px 0;
+    padding: 0px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 15px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.75, 0.8, 0.25, 1);
+
+
+}
+.bar:hover{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span{
+    height: 30px;
+    float: left;
+    background: linear-gradient(135deg,rgb(236,0,148,1)0%,rgba(252,103,103,1)100%);
+
+}
+.html{
+    width: 70%;
+    animation:html 30s;
+}
+@keyframes html {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 70%;
+    }
+    
+}
+.css{
+    width: 60%;
+    animation:css 30s;
+}
+@keyframes css {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 60%;
+    }
+    
+}
+.js{
+    width: 30%;
+    animation:js 30s;
+}
+@keyframes js {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 30%;
+    }
+    
+}
+.wp{
+    width: 50%;
+    animation:wp 30s;
+}
+@keyframes wp {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 50%;
+    }
+    
+}

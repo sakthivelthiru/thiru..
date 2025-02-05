@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 200vh; /* Makes page scrollable */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.hidden-text {
+    position: absolute;
+    top: 150vh; /* Appears when scrolling down */
+    left: -300px; /* Start hidden on the left */
+    width: 300px;
+    padding: 20px;
+    background-color: #ff9800;
+    color: white;
+    font-size: 20px;
+    transition: left 1s ease-in-out;
+}
+
+.show {
+    left: 50px; /* Moves into view */
+}
